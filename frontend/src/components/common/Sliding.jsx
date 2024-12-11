@@ -8,7 +8,7 @@ const Sliding = () => {
     "https://static.pw.live/5eb393ee95fab7468a79d189/GLOBAL_CMS/538998c0-7d3d-4717-bb2d-5feaf93da19a.webp",
     "https://static.pw.live/5eb393ee95fab7468a79d189/GLOBAL_CMS/ab047600-3d55-4a4e-ae28-25c91a594ab2.webp",
     "https://static.pw.live/5eb393ee95fab7468a79d189/GLOBAL_CMS/10ca6caa-66ed-4eea-87a9-1f1c1844a84d.webp",
-    "https://static.pw.live/5eb393ee95fab7468a79d189/GLOBAL_CMS/01aff80d-1ba1-4807-a23f-60cc55861cc1.webp",
+    "https://static.pw.live/5eb393ee95fab7468a79d189/GLOBAL_CMS/ab047600-3d55-4a4e-ae28-25c91a594ab2.webp",
   ];
 
   useEffect(() => {
