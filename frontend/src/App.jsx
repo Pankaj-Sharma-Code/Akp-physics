@@ -2,7 +2,6 @@ import { useState, useEffect } from "react";
 import { Routes, Route, Navigate } from "react-router-dom";
 import axios from "axios";
 import { Toaster } from "react-hot-toast";
-import OneSignal from "react-onesignal";
 
 import Login from "./components/auth/login/login";
 import SignUp from "./components/auth/signup/SignUp";
@@ -29,17 +28,6 @@ import ContestAnalysis from "./components/contestAnalysis/ContestAnalysis";
 
 function App() {
   const [isAuthenticated, setIsAuthenticated] = useState(null);
-
-  useEffect(()=>{
-    OneSignal.init({
-      appId: "cc3065ea-c981-4d8b-8e8e-e8dc6152cedb",
-      safari_web_id: "web.onesignal.auto.185a3882-a3fa-4e4c-9216-d752294e35fc",
-      notifyButton: {
-        enable: false,
-      },
-    });
-  },[]);
-
 
   const authUser = async () => {
     try {
