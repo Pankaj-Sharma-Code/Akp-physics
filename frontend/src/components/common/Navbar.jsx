@@ -89,7 +89,6 @@ const Navbar = () => {
       <div className="mx-2 flex-1 px-2 font-semibold text-transparent text-[1.2rem] bg-gradient-to-tr from-[#7d7bb9] to-[#ae445f] bg-clip-text no-underline text-base md:text-lg">
         <Link to="/">AKP Physics</Link>
       </div>
-      <div className='onesignal-customlink-container'></div>
       <div className="flex-none">
         {isAuthenticated && user ? (
           <>
@@ -117,6 +116,7 @@ const Navbar = () => {
                     </Link>
                   </li>
                   <li><a onClick={logout}>Logout</a></li>
+                  <li><div className='onesignal-customlink-container bg-transparent'></div></li>
                 </ul>
               </div>
             </ul>
