@@ -2,9 +2,16 @@ import Card from "../common/Card";
 import Footer from "../common/Footer";
 import Navbar from "../common/Navbar";
 import ProfileCard from "./ProfileCard";
+import { useEffect } from "react";
+import OneSignal from "react-onesignal";
 
 
 const Profile = () => {
+  useEffect(() => {
+    OneSignal.init({
+      appId: "18788e36-47d4-4830-a81a-e44c6d30f6c7",
+    });
+  }, []);
   return (
     <>
       <div className="drawer">
@@ -14,8 +21,8 @@ const Profile = () => {
           <ProfileCard />
         </div>
       </div>
+      <div className='onesignal-customlink-container'></div>
       <div className="flex flex-row align-middle justify-center flex-wrap gap-4 mt-10">
-        <div class='onesignal-customlink-container'></div>
         <Card imageSrc="https://i.ibb.co/3mX8jx2/engineers.png" title="IIT JEE"></Card>
         <Card imageSrc="https://i.ibb.co/Smbt7Y5/medical-team.png" title="NEET"></Card>
         <Card imageSrc="https://i.ibb.co/hZWLTZB/bank-1.png" title="Bank"></Card>
