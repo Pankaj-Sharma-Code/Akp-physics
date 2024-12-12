@@ -34,8 +34,6 @@ const corsOptions = {
 };
 
 app.use(cors(corsOptions));
-
-// app.use(cors());
 app.use(fileUpload());
 app.use(express.urlencoded({extended:true}));
 app.use(express.json());
