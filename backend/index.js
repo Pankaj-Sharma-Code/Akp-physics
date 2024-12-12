@@ -27,7 +27,15 @@ cloudinary.config({
     api_secret: process.env.CLOUDINARY_API_SECRET
 });
 
-app.use(cors());
+const corsOptions = {
+    origin: "https://akp-physics-ok1h.onrender.com",
+    methods: ["GET", "POST", "PATCH", "PUT", "DELETE", "OPTIONS"], 
+    allowedHeaders: ["Content-Type", "Authorization"],
+};
+
+app.use(cors(corsOptions));
+
+// app.use(cors());
 app.use(fileUpload());
 app.use(express.urlencoded({extended:true}));
 app.use(express.json());
