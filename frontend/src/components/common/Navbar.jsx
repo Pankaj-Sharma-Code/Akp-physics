@@ -3,16 +3,9 @@ import { useEffect, useState } from "react";
 import toast from "react-hot-toast";
 import { Link, useNavigate } from "react-router-dom";
 import LoadingSpinner from "../common/loadingSpinner";
-import OneSignal from "react-onesignal";
 
 const Navbar = () => {
   const navigate = useNavigate();
-
-  useEffect(() => {
-    OneSignal.init({
-      appId: "18788e36-47d4-4830-a81a-e44c6d30f6c7",
-    });
-  }, []);
 
   const [isAuthenticated, setIsAuthenticated] = useState(null);
   const [user, setUser] = useState(null);
@@ -116,7 +109,6 @@ const Navbar = () => {
                     </Link>
                   </li>
                   <li><a onClick={logout}>Logout</a></li>
-                  <li><div className='onesignal-customlink-container'></div></li>
                 </ul>
               </div>
             </ul>
