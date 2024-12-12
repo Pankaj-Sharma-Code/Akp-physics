@@ -15,7 +15,7 @@ const Profile = () => {
         </div>
       </div>
       <div className="flex flex-row align-middle justify-center flex-wrap gap-4 mt-10">
-        <div className='onesignal-customlink-container'></div>
+        <div class='onesignal-customlink-container'></div>
         <Card imageSrc="https://i.ibb.co/3mX8jx2/engineers.png" title="IIT JEE"></Card>
         <Card imageSrc="https://i.ibb.co/Smbt7Y5/medical-team.png" title="NEET"></Card>
         <Card imageSrc="https://i.ibb.co/hZWLTZB/bank-1.png" title="Bank"></Card>
