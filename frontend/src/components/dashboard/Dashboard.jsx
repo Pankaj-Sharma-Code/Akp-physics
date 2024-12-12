@@ -4,14 +4,19 @@ import Navbar from "../common/Navbar";
 import SlideBar from "../common/Slidebar";
 import Sliding from "../common/Sliding";
 import { Link } from "react-router-dom";
+import { useEffect } from "react";
 
 const DashBoard = () => {
+  useEffect(()=>{
+    localStorage.clear();
+  },[]);
+
   return (
     <div className="drawer">
       <input id="my-drawer-3" type="checkbox" className="drawer-toggle" />
       <div className="drawer-content flex flex-col">
-        <Navbar></Navbar>
-        <Sliding></Sliding>
+        <Navbar/>
+        <Sliding/>
         <div className="flex flex-row align-middle justify-center flex-wrap gap-4 mt-10">
           <Link to="/dashboard/testlist"><Item imageSrc="https://i.ibb.co/vVQQY6S/exam.png" title="Tests"></Item></Link>
           <Link to="/dashboard/notes"><Item imageSrc="https://i.ibb.co/k4Qk8tM/notes.png" title="Notes"></Item></Link>
@@ -21,7 +26,7 @@ const DashBoard = () => {
           <Link to="/dashboard/contest/results"><Item imageSrc="https://i.ibb.co/6m3KzrQ/ranking.png" title="Ranking"></Item></Link>
           <Link to="/dashboard/feedback"><Item imageSrc="https://i.ibb.co/8gHR1rR/good-feedback.png" title="Feedback"></Item></Link>
         </div>
-        <Footer></Footer>
+        <Footer/>
       </div>
       <SlideBar />
     </div>

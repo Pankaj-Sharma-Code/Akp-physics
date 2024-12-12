@@ -273,8 +273,7 @@ const handlePrevious = async () => {
     try {
       await axios.post(`/api/answers/submit/${test_id}`);
       toast.success('Test submitted successfully');
-      localStorage.removeItem(`selectedOptions-${test_id}`);
-      localStorage.removeItem('currentQuestionIndex');
+      localStorage.clear();
       navigate("/");
     } catch (error) {
       toast.error('Error submitting test. Please try again.');
