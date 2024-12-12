@@ -3,9 +3,16 @@ import { useEffect, useState } from "react";
 import toast from "react-hot-toast";
 import { Link, useNavigate } from "react-router-dom";
 import LoadingSpinner from "../common/loadingSpinner";
+import OneSignal from "react-onesignal";
 
 const Navbar = () => {
   const navigate = useNavigate();
+
+  useEffect(() => {
+    OneSignal.init({
+      appId: "18788e36-47d4-4830-a81a-e44c6d30f6c7",
+    });
+  }, []);
 
   const [isAuthenticated, setIsAuthenticated] = useState(null);
   const [user, setUser] = useState(null);
@@ -82,6 +89,7 @@ const Navbar = () => {
       <div className="mx-2 flex-1 px-2 font-semibold text-transparent text-[1.2rem] bg-gradient-to-tr from-[#7d7bb9] to-[#ae445f] bg-clip-text no-underline text-base md:text-lg">
         <Link to="/">AKP Physics</Link>
       </div>
+      <div className='onesignal-customlink-container'></div>
       <div className="flex-none">
         {isAuthenticated && user ? (
           <>
