@@ -116,7 +116,7 @@ const Navbar = () => {
                     </Link>
                   </li>
                   <li><a onClick={logout}>Logout</a></li>
-                  <li><div className='onesignal-customlink-container bg-transparent'></div></li>
+                  <li><div className='onesignal-customlink-container min-h-0'></div></li>
                 </ul>
               </div>
             </ul>
