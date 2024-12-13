@@ -7,7 +7,7 @@ import axios from "axios";
 import toast from "react-hot-toast";
 import { FiDownload } from "react-icons/fi";
 
-const Neet = () => {
+const NeetPyq = () => {
   const [notes, setNotes] = useState([]);
   const [error, setError] = useState(null);
   const navigate = useNavigate();
@@ -165,4 +165,4 @@ const Neet = () => {
   );
 };
 
-export default Neet;
+export default NeetPyq;
