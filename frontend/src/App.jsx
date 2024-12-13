@@ -25,6 +25,8 @@ import ContestTest from "./components/contest/ContestTest";
 import ContestResult from "./components/contest/ContestResult";
 import ContestRank from "./components/contest/ContestRank";
 import ContestAnalysis from "./components/contestAnalysis/ContestAnalysis";
+import Neet from "./components/neet/neet";
+import Jee from "./components/jee/Jee";
 
 function App() {
   const [isAuthenticated, setIsAuthenticated] = useState(null);
@@ -87,6 +89,8 @@ function App() {
         <Route path="/dashboard/contest/results" element={<ProtectedRoute element={<ContestResult/>}/>}/>
         <Route path="/dashboard/contest/results/:contestId" element={<ProtectedRoute element={<ContestRank/>}/>}/>
         <Route path="/dashboard/contest/results/questions/:contestId" element={<ProtectedRoute element={<ContestAnalysis/>}/>}/>
+        <Route path="/dashboard/neet" element={<ProtectedRoute element={<Neet/>}/>}/>
+        <Route path="/dashboard/jee" element={<ProtectedRoute element={<Jee/>}/>}/>
       </Routes>
       <Toaster />
     </>
