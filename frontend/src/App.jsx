@@ -25,8 +25,8 @@ import ContestTest from "./components/contest/ContestTest";
 import ContestResult from "./components/contest/ContestResult";
 import ContestRank from "./components/contest/ContestRank";
 import ContestAnalysis from "./components/contestAnalysis/ContestAnalysis";
-import Neet from "./components/neet/neet";
-import Jee from "./components/jee/Jee";
+// import Neet from "./components/neet/Neet";
+// import Jee from "./components/jee/Jee";
 
 function App() {
   const [isAuthenticated, setIsAuthenticated] = useState(null);
