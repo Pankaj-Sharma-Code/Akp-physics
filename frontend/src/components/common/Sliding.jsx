@@ -128,10 +128,10 @@ const Sliding = () => {
   ];
 
   const smallScreenImages = [
-    "https://i.ibb.co/DC5NTpV/Untitled-design.png",
-    "https://i.ibb.co/5YkGf4N/Untitled-design-1.png",
-    "https://i.ibb.co/FwD5L74/Untitled-design-2.png",
-    "https://i.ibb.co/5YkGf4N/Untitled-design-1.png",
+    "https://i.ibb.co/K044Whx/1.png",
+    "https://i.ibb.co/mXdVZs7/2.png",
+    "https://i.ibb.co/DkJvNG4/3.png",
+    "https://i.ibb.co/mXdVZs7/2.png",
   ];
 
   useEffect(() => {
