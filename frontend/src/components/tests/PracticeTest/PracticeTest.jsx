@@ -330,7 +330,7 @@ const handlePrevious = async () => {
             {/* <h2 className="text-2xl font-bold mb-4">{`Question ${currentQuestion + 1}: ${questions[currentQuestion].question}`}</h2> */}
             <div className="items-center mb-4">
               <span className="text-xl md:text-2xl font-bold">{`Question ${currentQuestion + 1}: `}</span>
-              <span className="text-md md:text-xl mb-4">{questions[currentQuestion].question}</span>
+              <span className="text-lg md:text-xl mb-4">{questions[currentQuestion].question}</span>
             </div>
   
             <div className="flex flex-col space-y-4">
