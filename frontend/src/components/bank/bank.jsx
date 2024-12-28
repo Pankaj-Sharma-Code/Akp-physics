@@ -78,7 +78,7 @@ const Bank = () => {
               <div
                 key={note.name}
                 onClick={() => handleDownload(note.imageUrl, note.name)}
-                className="cursor-pointer bg-gray-800 rounded-lg shadow-md p-4 transition-transform duration-200 hover:scale-105"
+                className="cursor-pointer bg-gray-800 rounded-lg shadow-md p-4 transition-transform duration-200"
               >
                 <h2 className="text-sm font-semibold text-gray-100">
                   {note.name}
